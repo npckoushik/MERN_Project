@@ -1,0 +1,186 @@
+{
+  "questions": [
+    {
+      "id": "8519",
+      "text": "What does HTML stand for?",
+      "options": [
+        {
+          "id": 0,
+          "text": "a) Hyper Text Makeup Language",
+          "isCorrect": true
+        },
+        {
+          "id": 1,
+          "text": "b) High Text Markup Language",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "c) Hyper and Text Markup Language",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "d) Home Tool Markup Language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "639d",
+      "text": "Which HTML tag is used to define a hyperlink?",
+      "options": [
+        {
+          "id": 0,
+          "text": "a) <link>",
+          "isCorrect": false
+        },
+        {
+          "id": 1,
+          "text": "b) <a>",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "c) <href>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "d) <url>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "afd3",
+      "text": "Which HTML tag is used to display a large heading?",
+      "options": [
+        {
+          "id": 0,
+          "text": "a) <h1>",
+          "isCorrect": true
+        },
+        {
+          "id": 1,
+          "text": "b) <h6>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "c) <head>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "d) <title>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "3fa9",
+      "text": "Which property is used to change the background color of an element?",
+      "options": [
+        {
+          "id": 0,
+          "text": "a) color",
+          "isCorrect": false
+        },
+        {
+          "id": 1,
+          "text": "b) background",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "c) background-color",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "d) bg-color",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "fe9b",
+      "text": "How do you make text bold in CSS?",
+      "options": [
+        {
+          "id": 0,
+          "text": "a) font-weight: bold;",
+          "isCorrect": true
+        },
+        {
+          "id": 1,
+          "text": "b) font-style: bold;",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "c) text-decoration: bold;",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "d) text-weight: bold;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "6f83",
+      "text": "What is the correct syntax to log a message to the console?",
+      "options": [
+        {
+          "id": 0,
+          "text": "a) print(\"Hello\")",
+          "isCorrect": false
+        },
+        {
+          "id": 1,
+          "text": "b) console.log(\"Hello\")",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "c) log.console(\"Hello\")",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "d) log(\"Hello\")",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "f59e",
+      "text": "What is the primary purpose of React?",
+      "options": [
+        {
+          "id": 0,
+          "text": "a) To make HTTP requests",
+          "isCorrect": false
+        },
+        {
+          "id": 1,
+          "text": "b) To create dynamic and reusable components for user interfaces",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "c) To manage the backend of a web application",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "d) To style web pages",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

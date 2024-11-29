@@ -1,0 +1,341 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.App {
+  min-width: 80vw; /* Ensure the app takes up 80% of the screen */
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px; /* Increased font size for better readability */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 12px 24px; /* Increased padding for larger buttons */
+  cursor: pointer;
+  font-size: 18px; /* Increased font size for better readability */
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .active-tab {
+  border-bottom: 2px solid orange;
+}
+
+.quiz-form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.quiz-form-section,
+.quiz-list-section {
+  width: 45%; /* Ensure sections take up appropriate space */
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.quiz-form-section {
+  margin-right: 10px;
+}
+
+.quiz-list-section {
+  margin-left: 10px;
+  max-height: 500px; /* Increased height for larger content area */
+  overflow-y: auto;
+}
+
+.quiz-form-section h2,
+.quiz-list-section h2 {
+  margin-bottom: 10px;
+  color: #ffa500;
+}
+
+.quiz-form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 12px; /* Increased padding for better input field size */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #444;
+  color: white;
+}
+
+.quiz-form .option-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.quiz-form .option-input input[type="text"] {
+  flex: 1;
+}
+
+.quiz-form .option-input input[type="radio"] {
+  margin-left: 10px;
+}
+
+.quiz-form h3 {
+  margin-top: 20px;
+  color: #ffa500;
+}
+
+.quiz-list-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-list-section ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #555;
+  padding: 12px; /* Increased padding for better list item size */
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.quiz-list-section ul li p {
+  margin: 0;
+}
+
+.quiz-list-section ul li .buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.quiz-list-section ul li button {
+  background-color: #ffa500;
+  color: black;
+  border: none;
+  padding: 8px 12px; /* Adjusted padding for better button size */
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.quiz-list-section ul li button:hover {
+  background-color: #cc8400;
+}
+
+.results, .start-quiz, .quiz-card {
+  text-align: center;
+}
+
+.results h1, .results h2, .start-quiz h2, .quiz-card h2 {
+  color: #ffa500;
+  margin: 10px 0;
+}
+
+.results {
+  background-color: #444; /* Dark background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.results h1 {
+  font-size: 32px; /* Larger font size */
+  color: #28a745; /* Green color for positive vibe */
+  margin-bottom: 20px;
+}
+
+.results h2 {
+  font-size: 24px; /* Larger font size */
+  color: #ffa500; /* Bright color */
+  margin-bottom: 20px;
+}
+
+.results p {
+  font-size: 18px; /* Consistent font size for additional info */
+  color: #ddd;
+  margin: 10px 0;
+}
+
+.results button, .start-quiz button {
+  background-color: #ffa500;
+  color: black;
+  border: none;
+  padding: 12px 24px; /* Increased padding for better button size */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+.quiz-form button {
+  background-color: #ffa500;
+  color: black;
+  border: none;
+  margin : 0 20px;
+  padding: 12px 24px; /* Increased padding for better button size */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.results button:hover, .start-quiz button:hover, .quiz-form button:hover {
+  background-color: #cc8400;
+}
+
+.start-quiz .disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Enhanced Timer Style */
+.timer {
+  font-size: 30px; /* Increase font size */
+  color: #ffa500; /* Bright orange color */
+  margin-bottom: 20px;
+  font-weight: bold; /* Make the text bold */
+  border: 2px solid #ffa500; /* Add a border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(255, 165, 0, 0.1); /* Light background color */
+  display: inline-block;
+}
+
+/* Hover Effects for Quiz Options */
+li:hover {
+  background-color: hsl(39, 100%, 20%);
+  /* background-color: #000; */
+  transform: scale(1.005);
+}
+
+/* Style for Question */
+.quiz-card h3 {
+  color: #ffa500;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Style for Options */
+.quiz-card ul li {
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-card ul li.correct {
+  background-color: #28a745; /* Green shade for correct answer */
+}
+
+.quiz-card ul li.incorrect {
+  background-color: #dc3545; /* Red shade for wrong answer */
+}
+
+/* About Us Section */
+.about-us {
+  background: #444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #ffa500;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.about-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-us ul li {
+  font-size: 20px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    width: 95%;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .quiz-form-section, .quiz-list-section {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .about-us {
+    padding: 15px;
+  }
+
+  .about-us h2 {
+    font-size: 24px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+  }
+
+  .about-us ul li {
+    font-size: 18px;
+  }
+}
